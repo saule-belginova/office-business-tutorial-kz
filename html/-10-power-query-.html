@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" id="exe-page-mv6kdc33-9lvplhypr">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>№ 10. Power Query көмегімен деректерді дайындау және түрлендіру | Бизнеске арналған кеңселік шешімдер</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Бұл электрондық оқу құралы білім алушылардың заманауи кеңселік қолданбаларды, бұлттық сервистерді және бизнес-аналитика құралдарын кәсіби қызметте қолдану дағдыларын қалыптастыруға арналған.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="../idevices/quick-questions/quick-questions.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mv6kdc33-9lvplhypr" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Басты бет</a>
+</li>
+<li> <a href="../html/-.html" class="no-ch">Оқу құралы туралы</a>
+</li>
+<li> <a href="../html/1--.html" class="daddy">1-бөлім. Іскерлік құжаттармен жұмыс</a>
+<ul class="other-section">
+<li> <a href="../html/-1---.html" class="no-ch">№ 1. Аналитикалық бизнес-есепті жасау және рәсімдеу</a>
+</li>
+<li> <a href="../html/-2-google-docs-.html" class="no-ch">№ 2. Google Docs жүйесінде іскерлік құжатты жасау және бірлесіп өңдеу</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2--ms-excel-.html" class="daddy">2-бөлім. MS Excel құралдарымен есептеу және талдау</a>
+<ul class="other-section">
+<li> <a href="../html/-3-.html" class="no-ch">№ 3. Қаржылық есептеулер жүргізу</a>
+</li>
+<li> <a href="../html/-4-.html" class="no-ch">№ 4. Кестелік деректерді сүзгілеу, сұрыптау және қорытындыларды есептеу</a>
+</li>
+<li> <a href="../html/-5-.html" class="no-ch">№ 5. «Шешімді іздеу» құралымен көлік есебін шешу</a>
+</li>
+<li> <a href="../html/-6-.html" class="no-ch">№ 6. Экономикалық деректерді талдау</a>
+</li>
+<li> <a href="../html/-7-.html" class="no-ch">№ 7. Экономикалық деректерді визуализациялау</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/3--.html" class="daddy">3-бөлім. Бұлттық сервистер және бірлескен жұмыс</a>
+<ul class="other-section">
+<li> <a href="../html/-8-microsoft-powerpoint-.html" class="no-ch">№ 8. Microsoft PowerPoint бағдарламасында бірлесіп жұмыс істеу</a>
+</li>
+<li> <a href="../html/-9---.html" class="no-ch">№ 9. Онлайн-формаларды жасау және қолдану</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/4--power-bi--.html" class="daddy">4-бөлім. Power BI және бизнес-аналитика</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/-10-power-query-.html" class="active no-ch">№ 10. Power Query көмегімен деректерді дайындау және түрлендіру</a>
+</li>
+<li> <a href="../html/-11-.html" class="no-ch">№ 11. Экономикалық деректерді модельдеу және визуализациялау</a>
+</li>
+<li> <a href="../html/-12-dax-.html" class="no-ch">№ 12. DAX көмегімен аналитикалық көрсеткіштерді құру</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/page.html" class="no-ch">Глоссарий</a>
+</li>
+<li> <a href="../html/--2.html" class="no-ch">Қорытынды тест</a>
+</li>
+<li> <a href="../html/page-2.html" class="no-ch">Қорытынды</a>
+</li>
+<li> <a href="../html/--3.html" class="no-ch">Пайдаланылған әдебиеттер</a>
+</li>
+</ul>
+</nav><main id="page-mv6kdc33-9lvplhypr" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Бизнеске арналған кеңселік шешімдер</p>
+<p class="package-subtitle">Электрондық оқу құралы</p></div>
+<div class="page-header"><h1 class="page-title sr-av">№ 10. Power Query көмегімен деректерді дайындау және түрлендіру</h1></div>
+</header><div id="page-content-page-mv6kdc33-9lvplhypr" class="page-content">
+<article id="block-mv6yl6cb-y3fdb9c66" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791912754521-bwmr9fejm" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791912754521-bwmr9fejm&quot;}">
+<div class="exe-text-template">
+    <div style="font-family: Arial,Helvetica,sans-serif; line-height: 1.7; color: #243746; max-width: 1000px; margin: 0 auto;">
+<div style="background: linear-gradient(135deg,#087e87,#14a6a4); border-radius: 16px; padding: 30px; color: white; margin-bottom: 22px;">
+<div style="color: #ffe6a3; font-weight: bold; letter-spacing: 1px;">БИЗНЕСКЕ АРНАЛҒАН КЕҢСЕЛІК ШЕШІМДЕР</div>
+<div style="font-size: 19px; margin-top: 10px;">Зертханалық жұмыс № 10</div>
+<h1 style="font-size: 27px; line-height: 1.35; margin: 10px 0 0; color: white;">Power Query көмегімен Power BI бағдарламасында деректерді дайындау және түрлендіру</h1>
+</div>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Жұмыстың мақсаты</h2>
+<p style="margin: 8px 0;">Excel файлындағы деректерді Power BI Desktop бағдарламасына қосу үдерісін меңгеру және Power Query редакторында деректерді дайындаудың практикалық дағдыларын қалыптастыру: деректер типтерін тексеру, мәндерді тазалау және түрлендіру, қайталанатын жазбаларды жою, бағандарды бөлу және деректерді топтау, пайдаланушының есептелетін бағанын және индекс бағанын құру.</p>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Зертханалық жұмысты орындағаннан кейін студент:</h2>
+<p style="margin: 8px 0;">- жергілікті Excel файлын Power BI Desktop бағдарламасына қоса алуы;</p>
+<p style="margin: 8px 0;">- Navigator терезесімен және Power Query редакторымен жұмыс істей алуы;</p>
+<p style="margin: 8px 0;">- импортталған деректер жиынының құрылымын талдай алуы;</p>
+<p style="margin: 8px 0;">- деректер типтерін тексеріп, өзгерте алуы;</p>
+<p style="margin: 8px 0;">- деректердің таралуы мен сапасын бағалай алуы;</p>
+<p style="margin: 8px 0;">- қате мәндерді анықтап, өңдей алуы;</p>
+<p style="margin: 8px 0;">- таңдалған бірегейлік кілтін ескере отырып, қайталанатын жазбаларды жоя алуы;</p>
+<p style="margin: 8px 0;">- мәндерді ауыстыру және бағандарды бөлу амалдарын орындай алуы;</p>
+<p style="margin: 8px 0;">- деректерді топтап, жинақталған көрсеткіштерді есептей алуы;</p>
+<p style="margin: 8px 0;">- пайдаланушы бағандарын құрып, индекс қоса алуы;</p>
+<p style="margin: 8px 0;">- Applied Steps аймағындағы әрекеттер ретін бақылай алуы;</p>
+<p style="margin: 8px 0;">- дайындалған деректерді Power BI моделіне жүктей алуы тиіс.</p>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Қажетті материалдар</h2>
+<p style="margin: 8px 0;">- Power BI Desktop;</p>
+<p style="margin: 8px 0;">- Financial Sample.xlsx файлы;</p>
+<p style="margin: 8px 0;">- Financial Sample.xlsx файлындағы financials оқу деректер жиыны.</p>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Қысқаша теориялық мәліметтер</h2>
+<h3 style="color: #087e87; font-size: 17px; margin: 18px 0 7px;">1. Power BI бағдарламасында деректерді қосу</h3>
+<p style="margin: 8px 0;">Деректер көзіне қосылу — аналитикалық есеп құрудың алғашқы кезеңі. Деректер көзі таңдалғаннан кейін Power BI бағдарламасы Navigator терезесінде деректер құрылымын алдын ала қарауға және оларды бірден жүктеу немесе алдымен түрлендіру қажеттігін анықтауға мүмкіндік береді.</p>
+<h3 style="color: #087e87; font-size: 17px; margin: 18px 0 7px;">2. Power Query және ETL үдерісі</h3>
+<p style="margin: 8px 0;">Power Query деректерді алу, түрлендіру және жүктеу үшін қолданылады. Оның жұмысы ETL қағидатына сәйкес келеді: Extract — алу, Transform — түрлендіру, Load — жүктеу. Орындалған барлық амалдар бірізді қадамдар түрінде тіркеледі, бұл деректерді дайындау үдерісін түсінікті әрі қайта орындауға болатын етеді.</p>
+<h3 style="color: #087e87; font-size: 17px; margin: 18px 0 7px;">3. Деректер сапасы</h3>
+<p style="margin: 8px 0;">Модель құру алдында деректер типтерін, бос мәндерді, қателерді, қайталанатын жазбаларды, мәндердің бірізділігін және кесте құрылымын тексеру қажет. Қате типтер, бос жолдар мен қате мәндер кейінгі талдау нәтижелерінің сенімділігіне әсер етуі мүмкін.</p>
+<h3 style="color: #087e87; font-size: 17px; margin: 18px 0 7px;">4. Қайталанатын жазбалар және жазбалардың бірегейлігі</h3>
+<p style="margin: 8px 0;">Жеке мәннің қайталануы бүкіл жазбаның қайталанатынын білдірмейді. Бір сегмент, ел немесе өнім көптеген жолдарда заңды түрде кездесуі мүмкін. Қайталанатын жазбаларды жою алдында жазбаның бірегейлігін нақты сипаттайтын өрісті немесе өрістер жиынтығын анықтау керек.</p>
+<h3 style="color: #087e87; font-size: 17px; margin: 18px 0 7px;">5. Түрлендірулердің орындалу реті</h3>
+<p style="margin: 8px 0;">Power Query бағдарламасындағы әрбір амал Applied Steps аймағында көрсетіледі. Қадамдардың реті маңызды: бастапқы қадамды өзгерту немесе жою кейінгі барлық түрлендірулерге әсер етуі мүмкін.</p>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Практикалық жағдай</h2>
+<p style="margin: 8px 0;">Компания талдаушыға Excel форматындағы қаржылық-экономикалық деректер жиынын ұсынды. Модель мен аналитикалық есепті құру алдында деректерді Power BI бағдарламасына импорттап, олардың сапасын тексеріп, Power Query ортасында қажетті түрлендірулерді орындау керек. Нәтижесінде № 11 зертханалық жұмыста модельдеу және визуализациялау үшін жарамды, дайындалған әрі тексерілген деректер жиыны алынуы тиіс.</p>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Жұмысты орындау тәртібі</h2>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">1-тапсырма. Excel файлын Power BI Desktop бағдарламасына қосу</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Power BI Desktop бағдарламасын іске қосыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Home қойындысында Get data батырмасын басып, Excel workbook тармағын таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Financial Sample.xlsx файлын көрсетіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Navigator терезесінде financials кестесін таңдап, оның мазмұнын қарап шығыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Transform Data көмегімен деректерді түрлендіруге өтіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 1" src="../content/resources/blobid20.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.1-сурет – Financial Sample.xlsx файлын қосу кезіндегі Navigator терезесі</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">2-тапсырма. Power Query Editor редакторымен танысу және деректерді тексеру</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Power BI Desktop бағдарламасында Home → Transform data пәрменін ашыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Редактордың негізгі аймақтарын қарастырыңыз: Queries, алдын ала қарау аймағы, Query Settings және Applied Steps.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Автоматты түрде анықталған деректер типтерін тексеріңіз. Қажет болса, қате типті өзгертіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. View қойындысында Column Distribution және Column Quality мүмкіндіктерін қосыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Дұрыс, бос және қате мәндердің үлесін талдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">6. Оқу мақсатындағы қате мән анықталса, Replace Errors пәрменін немесе оны өңдеудің басқа негізделген тәсілін қолданыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 2" src="../content/resources/blobid21.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.2-сурет – Power Query Editor терезесі</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 3" src="../content/resources/blobid22.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.3-сурет – Бағандардағы мәндердің таралуы мен сапасын қарау</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">3-тапсырма. Деректерді тазалау және қайталанатын жазбалармен жұмыс</h3>
+<div style="background: #fff8e8; border: 1px solid #efd8a0; border-radius: 9px; padding: 12px 16px; margin: 12px 0;">Жолдарды жою алдында жазбаның бірегейлігін қандай өрістер немесе олардың комбинациясы сипаттайтынын анықтаңыз. Мысалы, Segment мәні қайталанғаны үшін ғана жолдарды жоймаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Сұраудың көшірмесін жасаңыз немесе амалды көрсету үшін негізделген өрістер жиынтығын таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Жазбаның бірегейлігі тексерілетін негізгі өрістерді белгілеңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Home → Remove Rows → Remove Duplicates пәрменін таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Амалға дейінгі және кейінгі жолдар санын салыстырып, дұрыс жазбалардың жоғалмағанына көз жеткізіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Орындалған амалды Applied Steps аймағында тіркеңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 4" src="../content/resources/blobid23.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.4-сурет – Түрлендірулерден кейінгі Close &amp; Apply пәрмені</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">4-тапсырма. Мәндерді ауыстыру және стандарттау</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Мәнді стандарттауды көрсету үшін мәтіндік бағанды таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Transform қойындысында Replace Values пәрменін таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Value To Find өрісіне ауыстырылатын мәнді, ал Replace With өрісіне жаңа мәнді енгізіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Нәтижені тексеріп, ауыстыру тек қажетті жазбаларға қолданылғанына көз жеткізіңіз.</div>
+<div style="background: #fff8e8; border: 1px solid #efd8a0; border-radius: 9px; padding: 12px 16px; margin: 12px 0;">Оқу құралының авторлық мысалында Midmarket мәнін Midmarket_2 мәніне ауыстыру көрсетіледі.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 5" src="../content/resources/blobid24.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.5-сурет – Replace Values терезесі</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">5-тапсырма. Бағанды бөлу</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Белгілі бір бөлгіш бойынша бөлуге болатын мәндері бар бағанды таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Transform қойындысында Split Column → By Delimiter пәрменін таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Тиісті бөлгіш пен бөлу тәсілін көрсетіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Құрылған бағандарды тексеріп, қажет болса атауларын өзгертіңіз.</div>
+<div style="background: #fff8e8; border: 1px solid #efd8a0; border-radius: 9px; padding: 12px 16px; margin: 12px 0;">Авторлық мысалда Split Column амалы Segment өрісіне «бос орын» бөлгіші арқылы қолданылады. Таңдалған деректерде тиісті бөлгіш болмаса, бастапқы жұмыс деректер жиынын бұзбай, сұраудың оқу көшірмесін немесе басқа мәтіндік бағанды пайдаланыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 6" src="../content/resources/blobid25.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.6-сурет – Split Column пәрмені</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">6-тапсырма. Деректерді топтау</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Топтау белгісі ретінде Segment өрісін таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Transform → Group By пәрменіне өтіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Basic режимінде жаңа бағанға COGS by Segment атауын беріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Sum амалын және COGS бағанын таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Алынған жинақталған кестені тексеріп, нәтиженің экономикалық мағынасын түсіндіріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 7" src="../content/resources/blobid26.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.7-сурет – Group By пәрмені</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 8" src="../content/resources/blobid27.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.8-сурет – Group By терезесі</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">7-тапсырма. Пайдаланушының есептелетін бағанын құру</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Add Column қойындысына өтіп, Custom Column пәрменін таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Жаңа бағанға Profit Percentage атауын беріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Custom column formula өрісіне келесі өрнекті енгізіңіз:</div>
+<div style="background: #fff8e8; border: 1px solid #efd8a0; border-radius: 9px; padding: 12px 16px; font-family: monospace; font-size: 17px; margin: 10px 0;">[#"Profit"]/[#"COGS"]</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. OK батырмасын басып, бағанның қатесіз есептелгеніне көз жеткізіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Жаңа бағанның деректер типін Any түрінен Percentage түріне өзгертіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 9" src="../content/resources/blobid28.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.9-сурет – Custom Column пәрмені</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 10" src="../content/resources/blobid29.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.10-сурет – Custom Column терезесі</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 11" src="../content/resources/blobid30.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.11-сурет – Пайыздық деректер типін таңдау</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">8-тапсырма. Индекс бағанын қосу</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Add Column → Index Column пәрменіне өтіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Custom тармағын таңдаңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Starting Index өрісіне 1, ал Increment өрісіне 1 мәнін енгізіңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Жаңа баған жолдарды ретімен нөмірлейтінін тексеріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 12" src="../content/resources/blobid31.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.12-сурет – Index Column пәрмені</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 13" src="../content/resources/blobid32.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.13-сурет – Add Index Column терезесі</p>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 12px; padding: 12px; margin: 16px 0; text-align: center;"><img alt="Power Query суреті 14" src="../content/resources/blobid33.png" style="max-width: 100%; height: auto; border-radius: 5px;" /></div>
+<p style="text-align: center; font-size: 13px; color: #667a82; font-style: italic; margin: 5px 0 19px;">10.14-сурет – Қосылған индекс бағаны</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">9-тапсырма. Түрлендірулер ретін тексеру</h3>
+<p style="margin: 8px 0;">Applied Steps аймағында орындалған амалдарды ретімен қарап, келесі сұрақтарға жауап беріңіз:</p>
+<p style="margin: 8px 0;">қай қадам бірінші орындалды;</p>
+<p style="margin: 8px 0;">қай қадамдар кестенің құрылымын өзгертті;</p>
+<p style="margin: 8px 0;">қай қадамдар мәндерді өзгертті;</p>
+<p style="margin: 8px 0;">қай қадамдар деректер типін өзгертті;</p>
+<p style="margin: 8px 0;">алдыңғы қадамдардың бірі жойылса, кейінгі қадамдармен не болуы мүмкін.</p>
+<h3 style="background: #eefafa; color: #087e87; border-left: 5px solid #d9a441; padding: 12px 15px; border-radius: 8px; font-size: 18px; margin: 24px 0 12px;">10-тапсырма. Дайындалған деректерді жүктеу</h3>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Сұраудың қорытынды құрылымын және өңделмеген қателердің жоқтығын тексеріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Home → Close &amp; Apply пәрменін басыңыз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Дайындалған деректер жиыны Power BI бағдарламасына жүктелгенін және әрі қарай модельдеуге қолжетімді екенін тексеріңіз.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Power BI файлын .pbix форматында сақтаңыз.</div>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Жұмыс нәтижесіне қойылатын талаптар</h2>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Financial Sample деректер жиыны қосылған Power BI (.pbix) файлы.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Дұрыс тексерілген және қажет болған жағдайда өзгертілген деректер типтері.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. Дұрыс жазбаларды жоғалтпай, қайталанатын жазбаларды өңдеудің негізделген көрсетілімі.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Мәнді ауыстыру/стандарттау амалының орындалуы.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Бағанды бөлу амалының көрсетілімі.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">6. COGS by Segment көрсеткішін есептей отырып, деректерді топтау.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">7. Пайыздық деректер типі бар Profit Percentage пайдаланушы бағаны.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">8. Индекс бағаны.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">9. Applied Steps аймағындағы түрлендірулер тізбегі.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">10. Негізгі скриншоттар: Navigator, Power Query Editor, түрлендіру мысалы, Custom Column, Applied Steps және Close &amp; Apply пәрменінен кейінгі қорытынды деректер жиыны.</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">11. Деректерді дайындау жұмысы және оның кейінгі талдау үшін маңызы туралы қысқаша қорытынды.</div>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Бақылау сұрақтары</h2>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">1. Power BI бағдарламасындағы деректер көзі дегеніміз не?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">2. Navigator терезесі қандай қызмет атқарады?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">3. ETL үдерісі нені білдіреді?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">4. Power Query Editor не үшін арналған?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">5. Импорттаудан кейін деректер типтерін неге тексеру қажет?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">6. Бастапқы деректер жиындарында сапаға қатысты қандай мәселелер туындауы мүмкін?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">7. Бір бағандағы мәннің қайталануына қарап қана неге жазбаларды жоюға болмайды?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">8. Replace Values пәрмені не үшін қолданылады?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">9. Split Column қандай жағдайларда қолданылады?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">10. Group By пәрмені не үшін қажет?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">11. Пайдаланушы бағанының бастапқы деректер бағанынан қандай айырмашылығы бар?</div>
+<div style="background: #f7fbfb; border: 1px solid #d7e8e8; border-radius: 9px; padding: 9px 14px; margin: 7px 0;">12. Applied Steps панелі не үшін қолданылады және қадамдардың реті неге маңызды?</div>
+<h2 style="background: #087e87; color: #fff; border-radius: 9px; padding: 11px 16px; font-size: 20px; margin: 27px 0 13px;">Бағалау критерийлері</h2>
+<div style="overflow-x: auto; margin: 14px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+<tbody>
+<tr style="background: #087e87; color: #fff;">
+<th style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Критерий</th>
+<th style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Ұпай</th>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Financial Sample қосу және Navigator терезесімен жұмыс</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #fff; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Деректер типтері мен сапасын тексеру</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Қайталанатын жазбаларды негіздеп өңдеу</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #fff; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Мәндерді ауыстыру және стандарттау</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Бағанды бөлу</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #fff; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Деректерді топтау</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Пайдаланушының есептелетін бағаны</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #fff; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Индекс бағаны</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">5</td>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Applied Steps және деректерді дұрыс жүктеу</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">10</td>
+</tr>
+<tr style="background: #fff; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Есеп, скриншоттар және қорытынды</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">15</td>
+</tr>
+<tr style="background: #eefafa; color: #243746;">
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">Барлығы</td>
+<td style="border: 1px solid #d7e8e8; padding: 10px; text-align: left;">100</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="background: #eefafa; border-top: 4px solid #d9a441; border-radius: 12px; padding: 19px; margin-top: 26px;"><strong style="color: #087e87;">Жұмысты аяқтау</strong>
+<p style="margin: 6px 0;">Нәтижелерді сақтап, қорытындыны дайындаңыз. Білімді тексеру үшін eXeLearning жүйесіндегі жеке интерактивті тестке өтіңіз.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article><article id="block-mv6yo6ml-ogjopc3s0" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791912894858-gw0bp7q43" class="idevice_node quick-questions" data-idevice-path="../idevices/quick-questions/" data-idevice-type="quick-questions">
+<div class="quext-IDevice"><div class="game-evaluation-ids js-hidden" data-id="idevice-1791912894858-gw0bp7q43" data-evaluationb="false" data-evaluationid="253414e4-3233-48fc-a5db-3d97e5ba1795"></div><div class="quext-instructions QXTP-instructions"><p><strong>Біліміңізді тексеріңіз</strong><br />Орындаған зертханалық тапсырма бойынша сұрақтарға жауап беріңіз. Әр сұраққа бір дұрыс жауапты таңдаңыз.</p></div><div class="quext-version js-hidden">2</div><div class="quext-feedback-game"></div><div class="quext-DataGame js-hidden">%E9%B0%F3%E1%FB%F5%FC%F3%E6%E7%E0%F3%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C3%E7%D7%EA%E6%B0%BE%B0%F7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%F6%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E1%E6%F3%E0%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%D7%EA%F7%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%B7%A1%D1%E1%E6%E0%FD%FC%F5%B7%A1%D7%B7%E7%A2%A6%A3%A3%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A1%D0%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A1%D1%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%D3%A1%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A1%A5%B7%E7%A2%A6%A1%A6%B7%E7%A2%A6%A7%A4%B7%A0%A2%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A1%A7%B7%E7%A2%A6%A1%D3%B7%E7%A2%A6%A6%A3%B7%E7%A2%A6%A1%A7%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%D3%A1%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A1%A5%B7%A1%D1%BD%E1%E6%E0%FD%FC%F5%B7%A1%D7%B7%A1%D1%F0%E0%B7%A0%A2%BD%B7%A1%D7%B7%E7%A2%A6%A3%D7%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%A1%D6%B7%E7%A2%A6%A1%A6%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%AB%A1%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D6%B7%A0%A2%B7%E7%A2%A6%A1%A5%B7%E7%A2%A6%A1%A7%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A6%A7%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D6%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D0%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%AB%D0%B7%A0%A2%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D4%B7%E7%A2%A6%A6%A3%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A1%D1%B7%E7%A2%A6%A1%A2%B7%A0%A2%B7%E7%A2%A6%A1%A3%B7%E7%A2%A6%A1%D7%B7%E7%A2%A6%A1%AB%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%A1%D6%B7%E7%A2%A6%A6%AA%B7%E7%A2%A6%A1%A2%B7%A0%A2%B7%E7%A2%A6%A6%A3%B7%E7%A2%A6%D0%A3%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%AB%D0%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%AB%A1%B7%E7%A2%A6%A1%A2%B7%A0%A2%B7%E7%A2%A6%A1%A4%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A6%A1%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D4%B7%A0%A2%B7%E7%A2%A6%A1%A3%B7%E7%A2%A6%A1%A7%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%D3%A1%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A1%A5%BC%B7%A0%A2%B7%E7%A2%A6%D6%AA%B7%E7%A2%A6%A6%A2%B7%A0%A2%B7%E7%A2%A6%A6%A3%B7%E7%A2%A6%D0%A3%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%AB%D0%B7%E7%A2%A6%AB%D0%B7%E7%A2%A6%A1%A2%B7%A0%A2%B7%E7%A2%A6%A1%A3%B7%E7%A2%A6%A7%A4%B7%E7%A2%A6%A6%A2%B7%A0%A2%B7%E7%A2%A6%A1%A6%B7%E7%A2%A6%D0%A3%B7%E7%A2%A6%A6%A2%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%A6%A3%B7%A0%A2%B7%E7%A2%A6%A1%A4%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A6%A1%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%A1%D4%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A6%D0%B7%A0%A2%B7%E7%A2%A6%A6%A0%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%D3%A1%B7%E7%A2%A6%A1%A6%B7%E7%A2%A6%A1%A2%B7%E7%A2%A6%D3%A1%B7%E7%A2%A6%A6%D0%B7%E7%A2%A6%A1%A5%BC%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%D1%FA%FD%FD%E1%F7%B2%E6%FA%F7%B2%E0%FB%F5%FA%E6%B2%F3%FC%E1%E5%F7%E0%B2%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FD%E2%E6%FB%FD%FC%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F3%FC%E1%E5%F7%E0%E1%C0%F3%FF%F6%FD%FC%B0%A8%E6%E0%E7%F7%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%FF%F7%C1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A1%BE%B0%E7%E1%F7%DE%FB%E4%F7%E1%B0%A8%E6%E0%E7%F7%BE%B0%FC%E7%FF%F0%F7%E0%DE%FB%E4%F7%E1%B0%A8%A1%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%E3%E7%F7%E1%E6%FB%FD%FC%E1%D5%F3%FF%F7%B0%A8%C9%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C2%FD%E5%F7%E0%B2%D0%DB%B2%u04A3%u04A2%u0401%u04A6%u04A2%u04D2%u04A9%u04A2%u04AE%u04A2%u04D3%u04D9%u04AF%u04A6%u04A2%B2%C2%FD%E5%F7%E0%B2%C3%E7%F7%E0%EB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04D9%u04AF%u04D9%u0431%B2%u04AF%u04A7%u04A1%u04C4%u04A5%u04A1%u04C4%B2%u04AE%u04A2%u0409%u04D3%u04A2%u04D0%u04D9%B2%u0409%u04A2%u04AF%u04A6%u04A2%u04AB%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%u0483%u04A2%u04D3%u04D0%u04A2%u04AD%u0409%u04D9%B2%u04A6%u04A7%u04D2%u04A7%u04A8%u04D0%u04A7%u04D2%u04A6%u04C4%B2%u04A6%u04A2%u04AB%u04D9%u04AF%u04A6%u04A2%u04D1%B2%u04A4%u044B%u04AF%u04A7%B2%u04D0%u043D%u04D2%u04A9%u04A7%u04AF%u04A6%u04C4%u04D2%u04D1%B0%BE%B0%u0488%u04A7%u04D3%u04D0%u04A7%u04A9%u04A7%u04D2%B2%u04A2%u04D2%u04A2%u04D3%u04D9%u04AF%u04A6%u04A2%u0401%u04D9%B2%u04A3%u04A2%u04AB%u04A9%u04A2%u04AF%u04D9%u04D3%u04D0%u04A2%u04D2%u04A6%u04D9%B2%u0409%u0423%u04D2%u04D1%B0%BE%B0%u048A%u04AF%u04D0%u04A7%u04D2%u04A2%u04A8%u04D0%u04AA%u04A0%u04D0%u04C4%B2%u04A0%u04AA%u04A5%u04D1%u04A2%u04A9%u04AA%u04A5%u04A2%u04D4%u04AA%u04DD%u04A9%u04A2%u04D2%u04A6%u04D9%B2%u04A4%u04A2%u04D3%u04A2%u04D1%B0%BE%B0%D6%D3%CA%B2%u047B%u04A9%u04DA%u04A7%u04AE%u04A6%u04A7%u04D2%u04C4%u04AF%B2%u0409%u0423%u04D2%u04D1%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A2%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C2%FD%E5%F7%E0%B2%C3%E7%F7%E0%EB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%B2%u0409%u04A2%u04AB%u04D0%u04A2%u04A9%u04A2%u04AF%u04A2%u04D0%u04D9%u04AF%B2%u04A4%u04AC%u04A9%u04A6%u04A2%u04D2%u04A6%u04D9%B2%u04A4%u04AC%u04DC%B2%u04A2%u04A9%u04A6%u04D9%u04AF%u04A6%u04A2%B2%u04AF%u04A7%u04A1%u04C4%u04A5%u04A1%u04C4%B2%u047B%u04D2%u04C4%u04D3%u04D0%u04A7%u04D2%u04A6%u04C4%B2%u04A6%u0423%u04D2%u04D9%u04D3%B2%u04A2%u04AF%u04D9%u0409%u04D0%u04A2%u04D1%B2%u04AF%u04A7%B2%u043D%u04DA%u04C4%u04AF%B2%u0409%u04A2%u04A4%u04A7%u04D0%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%u0483%u04A2%u0401%u04A2%u04AF%u04A6%u04A2%u04D2%u04A6%u04D9%u0431%B2%u04A6%u04A7%u04D2%u04A7%u04A8%u04D0%u04A7%u04D2%B2%u04D0%u043D%u04D2%u04A9%u04A7%u04D2%u04C4%u04AF%B2%u047B%u04A5%u04A1%u04A7%u04D2%u04D0%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u0485%u04A2%u0431%u04A6%u04D9%B2%u04D0%u043D%u04D2%u04A6%u04A7%B2%u0409%u04A2%u04AB%u04D0%u04A2%u04A9%u04A2%u04AF%u04A2%u04D0%u04D9%u04AF%B2%u04A4%u04A2%u04A5%u04A3%u04A2%u04A9%u04A2%u04D2%u04A6%u04D9%u0431%B2%u0409%u04A2%u04D0%u04A7%B2%u04A4%u04AC%u04AB%u04D9%u04A9%u04D1%u04D9%u04AF%u04A2%B2%u04A4%u04AC%u04A9%B2%u04A3%u04A7%u04D2%u04AE%u04A7%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u0484%u04A2%u0431%u04A2%B2%u04A7%u04D3%u04A7%u04AD%u04D0%u04A7%u04A9%u04A7%u04D0%u04C4%u04AF%B2%u04A3%u04A2%u0401%u04A2%u04AF%B2%u0409%u0423%u04D2%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u04B3%u0423%u04D2%u04A2%u04D1%u04A9%u04A2%u04D2%u04A6%u04D9%u0431%B2%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%u04A9%u04D1%B2%u04D2%u04A7%u04D0%u04C4%u04AF%B2%u047B%u04A5%u04A1%u04A7%u04D2%u04D0%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C2%FD%E5%F7%E0%B2%C3%E7%F7%E0%EB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%B2%u044B%u04D2%u04A3%u04C4%u04D2%B2%u04D3%u04A7%u04A1%u04AE%u04A7%u04AF%u04D0%B2%u04A3%u04AC%u04AB%u04D9%u04AF%u04DA%u04A2%B2%D1%DD%D5%C1%B2%u04A8%u047B%u04D2%u04D3%u04A7%u04D0%u04A8%u04C4%u04DA%u04C4%u04AF%u04C4%u0431%B2%u04A4%u04A2%u04A9%u04AD%u04D9%B2%u04D3%u04AC%u04AE%u04A2%u04D3%u04D9%u04AF%B2%u04A7%u04D3%u04A7%u04AD%u04D0%u04A7%u04D1%B2%u043D%u04DA%u04C4%u04AF%B2%u0409%u04A2%u04AF%u04A6%u04A2%u04AB%B2%u04A8%u04AC%u04AE%u04A2%u04AF%u04A6%u04A2%B2%u0409%u04AC%u04A9%u04A6%u04A2%u04AF%u04D9%u04A9%u04A2%u04A6%u04D9%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C0%F7%E2%FE%F3%F1%F7%B2%C4%F3%FE%E7%F7%E1%B2%BA%u048E%u044B%u04AF%u04A6%u04A7%u04D2%u04A6%u04C4%B2%u04A2%u04D1%u04D9%u04D3%u04D0%u04D9%u04D2%u04D1%BB%B0%BE%B0%C1%E2%FE%FB%E6%B2%D1%FD%FE%E7%FF%FC%B2%BA%u0483%u04A2%u0401%u04A2%u04AF%u04A6%u04D9%B2%u04A3%u047B%u04A9%u04D1%BB%B0%BE%B0%D5%E0%FD%E7%E2%B2%D0%EB%B2%BA%u04B0%u04AC%u04AD%u04D0%u04A2%u04D1%BB%B0%BE%B0%DB%FC%F6%F7%EA%B2%D1%FD%FE%E7%FF%FC%B2%BA%u048A%u04AF%u04A6%u04A7%u04A8%u04D3%u04D0%u04C4%u04A8%B2%u04A3%u04A2%u0401%u04A2%u04AF%BB%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A0%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C2%FD%E5%F7%E0%B2%C3%E7%F7%E0%EB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%u0401%u04D9%B2%D3%E2%E2%FE%FB%F7%F6%B2%C1%E6%F7%E2%E1%B2%BA%u0408%u04AC%u04A9%u04A6%u04A2%u04AF%u04D9%u04A9%u0401%u04A2%u04AF%B2%u0409%u04A2%u04A6%u04A2%u04AE%u04A6%u04A2%u04D2%BB%B2%u04A3%u047B%u04A9%u04C4%u04AE%u04C4%B2%u04AF%u04A7%B2%u043D%u04DA%u04C4%u04AF%B2%u0409%u04AC%u04A9%u04A6%u04A2%u04AF%u04D9%u04A9%u04A2%u04A6%u04D9%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%u0487%u04D3%u04A7%u04AD%u04A8%u04A7%B2%u04A2%u04D2%u04AF%u04A2%u04A9%u0401%u04A2%u04AF%B2%u04A0%u04AA%u04A5%u04D1%u04A2%u04A9%u04AA%u04A5%u04A2%u04D4%u04AA%u04DD%u04A9%u04A2%u04D2%u04A6%u04D9%B2%u04D0%u04A2%u0431%u04A6%u04A2%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u0488%u04A7%u04D3%u04D0%u04A7%u04A9%u04A7%u04D2%B2%u04A2%u04D2%u04A2%u04D3%u04D9%u04AF%u04A6%u04A2%u0401%u04D9%B2%u04A3%u04A2%u04AB%u04A9%u04A2%u04AF%u04D9%u04D3%u04D0%u04A2%u04D2%u04A6%u04D9%B2%u04AC%u04D2%u04AF%u04A2%u04D0%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u0487%u04D3%u04A7%u04AD%B2%u04A3%u04A7%u04D0%u04D0%u04A7%u04D2%u04C4%u04AF%u04A7%B2%u04D3%u043D%u04A5%u04A1%u04C4%u04A9%u04A7%u04D2%B2%u0409%u04AC%u04D3%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%BE%B0%u0486%u04A7%u04D2%u04A7%u04A8%u04D0%u04A7%u04D2%u04A6%u04C4%B2%u04D0%u043D%u04D2%u04A9%u04A7%u04AF%u04A6%u04C4%u04D2%u04D1%B2%u0409%u04A2%u04A6%u04A2%u04AE%u04A6%u04A2%u04D2%u04D9%u04AF%u04D9%u0431%B2%u04D2%u04A7%u04D0%u04C4%u04AF%B2%u0409%u04A2%u04D2%u04A2%u04D1%B2%u043D%u04DA%u04C4%u04AF%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A1%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A6%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%C2%FD%E5%F7%E0%B2%C3%E7%F7%E0%EB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%u0401%u04D9%B2%D1%FE%FD%E1%F7%B2%B4%B2%D3%E2%E2%FE%EB%B2%BA%u0484%u04A2%u04A3%u04D1%B2%u04A4%u044B%u04AF%u04A7%B2%u0409%u04AC%u04A9%u04A6%u04A2%u04AF%u04D1%BB%B2%u04A8%u04AC%u04AE%u04A2%u04AF%u04A6%u04A2%u04D3%u04D9%B2%u0409%u04A2%u04AF%u04A6%u04A2%u04AB%B2%u044B%u04D2%u04A7%u04A8%u04A7%u04D0%u04D0%u04C4%B2%u04AC%u04D2%u04D9%u04AF%u04A6%u04A2%u04AB%u04A6%u04D9%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%u0484%u04A2%u04D3%u04A2%u04A9%u0401%u04A2%u04AF%B2%u047B%u04A5%u04A1%u04A7%u04D2%u04C4%u04D3%u04D0%u04A7%u04D2%u04A6%u04C4%B2%u0409%u04AC%u04A9%u04A6%u04A2%u04AF%u04D9%u04AD%BE%B2%u04A6%u04A7%u04D2%u04A7%u04A8%u04D0%u04A7%u04D2%u04A6%u04C4%B2%C2%FD%E5%F7%E0%B2%D0%DB%B2%u04A3%u04A2%u0401%u04A6%u04A2%u04D2%u04A9%u04A2%u04AE%u04A2%u04D3%u04D9%u04AF%u04A2%B2%u04A4%u043D%u04A8%u04D0%u04A7%u04AB%u04A6%u04C4%B0%BE%B0%u047A%u04A5%u04A1%u04A7%u04D2%u04C4%u04D3%u04D0%u04A7%u04D2%u04A6%u04C4%B2%u04D3%u04A2%u0409%u04D0%u04A2%u04AE%u04A2%u04AB%B2%u04D2%u04A7%u04A6%u04A2%u04A8%u04D0%u04AC%u04D2%u04A6%u04D9%B2%u04A4%u04A2%u04A3%u04A2%u04A6%u04D9%B0%BE%B0%u0488%u04A7%u04D3%u04D0%u04A7%u04A9%u04A7%u04D2%B2%u04A2%u04D2%u04A2%u04D3%u04D9%u04AF%u04A6%u04A2%u0401%u04D9%B2%u04A3%u04A2%u04AB%u04A9%u04A2%u04AF%u04D9%u04D3%u04D0%u04A2%u04D2%u04A6%u04D9%B2%u04A2%u04A0%u04D0%u04AC%u04AE%u04A2%u04D0%u04D0%u04D9%B2%u04D0%u043D%u04D2%u04A6%u04A7%B2%u0409%u0423%u04D2%u04A2%u04A6%u04D9%B0%BE%B0%u048A%u04AF%u04D0%u04A7%u04D2%u04A2%u04A8%u04D0%u04AA%u04A0%u04D0%u04C4%B2%u04A7%u04D3%u04A7%u04AD%u04D0%u04C4%u0431%B2%u04A0%u04AA%u04A5%u04D1%u04A2%u04A9%u04AA%u04A5%u04A2%u04D4%u04AA%u04DD%u04A9%u04A2%u04D2%u04D9%u04AF%B2%u04A4%u04A2%u04D3%u04A2%u04AB%u04A6%u04D9%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A2%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%EF%CF%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%C1%F3%E4%F7%B2%E1%F1%FD%E0%F7%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%E6%E0%E7%F7%BE%B0%E5%F7%FB%F5%FA%E6%F7%F6%B0%A8%A3%A2%A2%BE%B0%E6%FB%E6%FE%F7%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F5%F3%FF%F7%DF%FD%F6%F7%B0%A8%A3%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A0%BE%B0%F1%E7%E1%E6%FD%FF%DF%F7%E1%E1%F3%F5%F7%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%A3%A2%A2%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%A0%A7%A1%A6%A3%A6%F7%A6%BF%A1%A0%A1%A1%BF%A6%AA%F4%F1%BF%F3%A7%F6%F0%BF%A1%F6%AB%A5%F7%A7%F0%F3%A3%A5%AB%A7%B0%BE%B0%F5%FE%FD%F0%F3%FE%C6%FB%FF%F7%B0%A8%A0%BE%B0%FB%F6%B0%A8%B0%FB%F6%F7%E4%FB%F1%F7%BF%A3%A5%AB%A3%AB%A3%A0%AA%AB%A6%AA%A7%AA%BF%F5%E5%A2%F0%E2%A5%E3%A6%A1%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C1%E6%F3%E0%E6%D5%F3%FF%F7%B0%A8%B0%u04B0%u04A7%u04D3%u04D0%u04A8%u04A7%B2%u04A4%u04A2%u04D1%u04A2%u04AD%B2%u04A3%u04A7%u04D2%u04D1%u04A6%u04C4%B2%u04A3%u04A2%u04D3%u04D0%u04A2%u04D1%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%u0484%u04A2%u04D1%u04A2%u04AD%u04D0%u04D9%B2%u04A7%u04AF%u04A1%u04C4%u04A5%u04D1%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B0%D1%FD%FD%FE%B3%B2%C6%FA%F7%B2%F1%FE%E7%F7%B2%FB%E1%A8%B0%BE%B0%FF%E1%F5%DC%F7%E5%D5%F3%FF%F7%B0%A8%B0%u04B0%u04A7%u04D3%u04D0%u04D0%u04C4%B2%u0409%u04A2%u04AB%u04D0%u04A2%B2%u04D0%u04A2%u04AD%u04D3%u04D9%u04D2%u04D1%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D3%F1%F1%F7%E1%E1%B2%F1%FD%F6%F7%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%DE%FD%FD%F9%FB%FC%F5%B0%A8%B0%D1%FD%FD%FE%B3%B2%C6%FA%F7%B2%FB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B2%EB%FD%E7%B2%E5%F7%E0%F7%B2%FE%FD%FD%F9%FB%FC%F5%B2%F4%FD%E0%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%D1%FE%FB%F1%F9%B2%FA%F7%E0%F7%B2%E6%FD%B2%E2%FE%F3%EB%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%u0408%u04A2%u04D0%u04A7%u04A9%u04A7%u04D2%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%u0486%u0423%u04D2%u04D9%u04D3%B2%u04A4%u04A2%u04D1%u04A2%u04AD%u04D0%u04A2%u04D2%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%A3%A2%B2%u04A3%u04A2%u04A9%u04A6%u04D9%u0409%B2%u04DA%u04A8%u04A2%u04A9%u04A2%B2%u04A3%u04AC%u04AB%u04D9%u04AF%u04DA%u04A2%B2%u04AF%u044B%u04D0%u04AA%u04A4%u04A7%B2%B0%BE%B0%FF%E1%F5%C5%F7%FB%F5%FA%E6%B0%A8%B0%C5%F7%FB%F5%FA%E6%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F7%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F7%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%u04B3%u0423%u04D2%u04A2%u0409%u0409%u04A2%B2%u04A8%u04A7%u04D0%u04A7%u04D0%u04C4%u04AF%B2%u04D1%u04A2%u0409%u04D9%u04D0%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%DE%FB%F4%F7%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%u04B0%u04AC%u04A9%u04D9%u0409%B2%u04DF%u04A8%u04D2%u04A2%u04AF%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%u04B0%u04AC%u04A9%u04D9%u0409%B2%u04DF%u04A8%u04D2%u04A2%u04AF%B2%u04D2%u04A7%u04A4%u04AA%u04AE%u04C4%u04AF%u04A7%u04AF%B2%u04DA%u04D9%u0401%u04D1%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%u04B3%u0423%u04D2%u04A2%u0409%u04D0%u04A2%u04D2%B2%u04D3%u04A2%u04AF%u04D9%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%DC%FD%B2%E2%FB%F1%E6%E7%E0%F7%B2%E3%E7%F7%E1%E6%FB%FD%FC%B0%BE%B0%FF%E1%F5%D1%FD%FD%FE%B0%A8%B0%B8%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%C6%B0%A8%B0%CB%FD%E7%B2%FE%FD%E1%E6%B2%A1%A1%A2%B2%E2%FD%FB%FC%E6%E1%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%DE%FB%E4%F7%B0%A8%B0%CB%FD%E7%B2%FE%FD%E1%E6%B2%FD%FC%F7%B2%FE%FB%F4%F7%B0%BE%B0%FF%E1%F5%DE%FD%E1%E6%DE%FB%E4%F7%E1%B0%A8%B0%CB%FD%E7%B2%FE%FD%E1%E6%B2%F3%FE%FE%B2%EB%FD%E7%E0%B2%FE%FB%E4%F7%E1%B3%B0%BE%B0%FF%E1%F5%D3%FE%FE%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%u04B0%u04A7%u04D3%u04D0%B2%u04A2%u04DD%u0409%u04D0%u04A2%u04A9%u04A6%u04D9%B3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B0%u0486%u0423%u04D2%u04D9%u04D3%B3%B2%EE%B2%u047A%u04D0%u04A7%B2%u04A4%u04A2%u0409%u04D3%u04D9%B3%B2%EE%B2%u0486%u0423%u04D2%u04D9%u04D3%B2%u04D0%u04A2%u04AD%u04D0%u04D9%u0431%u04D9%u04A5%B3%B2%EE%B2%u0484%u04A2%u04D1%u04A2%u04A3%u04D9%u0431%u04D9%u04A5%B2%u04A6%u0423%u04D2%u04D9%u04D3%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B0%u0486%u0423%u04D2%u04D9%u04D3%B2%u04A7%u04AE%u04A7%u04D3%B3%B2%EE%B2%u0484%u04A2%u04D1%u04A2%u04AD%B2%u0409%u04A2%u04D0%u04A7%B2%B3%B2%EE%B2%u0486%u0423%u04D2%u04D9%u04D3%B2%u04A4%u04A2%u04D1%u04A2%u04AD%B2%u04A3%u04A7%u04D2%u04AE%u04A7%u04A6%u04C4%u0431%u04C4%u04A5%B3%B2%EE%B2%u0408%u04A2%u04D0%u04A7%u04A9%u04A7%u04D3%u04D0%u04C4%u0431%u04C4%u04A5%B3%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%C6%FA%F7%B2%E1%F1%FD%E0%F7%B2%F1%F3%FC%B5%E6%B2%F0%F7%B2%E1%F3%E4%F7%F6%B2%F0%F7%F1%F3%E7%E1%F7%B2%E6%FA%FB%E1%B2%E2%F3%F5%F7%B2%FB%E1%B2%FC%FD%E6%B2%E2%F3%E0%E6%B2%FD%F4%B2%F3%B2%C1%D1%DD%C0%DF%B2%E2%F3%F1%F9%F3%F5%F7%BC%B0%BE%B0%FF%E1%F5%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%u04B3%u0423%u04D2%u04A2%u0409%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B0%CB%FD%E7%B2%F1%F3%FC%B2%FD%FC%FE%EB%B2%E1%F3%E4%F7%B2%E6%FA%F7%B2%E1%F1%FD%E0%F7%B2%FD%FC%F1%F7%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%CB%FD%E7%B2%F1%F3%FC%B2%FD%FC%FE%EB%B2%E1%F3%E4%F7%B2%FD%FC%F1%F7%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%u0482%u0409%u04AD%u04A2%u04D2%u04A2%u04D0%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FA%FD%E0%E1%FA%FB%E2%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%CB%FD%E7%E0%B2%E1%F1%FD%E0%F7%B2%E5%FB%FE%FE%B2%F0%F7%B2%E1%F3%E4%F7%F6%B2%F3%F4%E6%F7%E0%B2%F7%F3%F1%FA%B2%E3%E7%F7%E1%E6%FB%FD%FC%BC%B2%CB%FD%E7%B2%F1%F3%FC%B2%FD%FC%FE%EB%B2%E2%FE%F3%EB%B2%FD%FC%F1%F7%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%CB%FD%E7%E0%B2%E1%F1%FD%E0%F7%B2%E5%FB%FE%FE%B2%F0%F7%B2%F3%E7%E6%FD%FF%F3%E6%FB%F1%F3%FE%FE%EB%B2%E1%F3%E4%F7%F6%B2%F3%F4%E6%F7%E0%B2%F7%F3%F1%FA%B2%E3%E7%F7%E1%E6%FB%FD%FC%BC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%u04B3%u04C4%u04A5%u04A6%u04C4%u0431%B2%u04AF%u044B%u04D0%u04AA%u04A4%u04A7%u0431%u04C4%u04A5%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%CB%FD%E7%B2%F1%F3%FC%B2%E1%F3%E4%F7%B2%E6%FA%F7%B2%E1%F1%FD%E0%F7%B2%F3%E1%B2%FF%F3%FC%EB%B2%E6%FB%FF%F7%E1%B2%F3%E1%B2%EB%FD%E7%B2%E5%F3%FC%E6%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%C6%FA%F7%B2%FE%F3%E1%E6%B2%E1%F1%FD%E0%F7%B2%E1%F3%E4%F7%F6%B2%FB%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%FD%E7%B2%FA%F3%E4%F7%B2%F3%FE%E0%F7%F3%F6%EB%B2%F6%FD%FC%F7%B2%E6%FA%FB%E1%B2%F3%F1%E6%FB%E4%FB%E6%EB%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%u04B3%u04C4%u04A5%B2%u04A3%u0423%u04A9%B2%u04D0%u04A7%u04D3%u04D0%u04D0%u04C4%B2%u0409%u04A2%u04AB%u04D0%u04A2%u04A6%u04A2%u04AF%B2%u04D0%u04A2%u04AD%u04D3%u04D9%u04D2%u04A2%B2%u04A2%u04A9%u04A2%u04D3%u04D9%u04A5%BC%B2%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%CB%FD%E7%B2%FC%F7%F7%F6%B2%F3%E6%B2%FE%F7%F3%E1%E6%B2%B7%E1%B7%B2%FD%F4%B2%F1%FD%E0%E0%F7%F1%E6%B2%F3%FC%E1%E5%F7%E0%E1%B2%E6%FD%B2%F5%F7%E6%B2%E6%FA%F7%B2%FB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%BC%B2%C2%FE%F7%F3%E1%F7%B2%E6%E0%EB%B2%F3%F5%F3%FB%FC%BC%B0%BE%B0%FF%E1%F5%C4%FB%F6%F7%FD%DB%FC%E6%E0%FD%B0%A8%B0%C4%FB%F6%F7%FD%B2%DB%FC%E6%E0%FD%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%u0484%u04A2%u04A3%u04D1%B2%B0%BE%B0%FF%E1%F5%DD%E2%E6%FB%FD%FC%B0%A8%B0%u0484%u04A2%u04D1%u04A2%u04AD%B2%u04AF%u0423%u04D3%u0409%u04A2%u04D3%u04D9%B0%BE%B0%FF%E1%F5%C7%E1%F7%D4%E7%FE%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%F3%FC%F6%B2%FB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B2%E6%FA%F3%E6%B2%E5%FB%FE%FE%B2%F0%F7%B2%E4%F7%E0%EB%B2%E7%E1%F7%F4%E7%FE%B0%BE%B0%FF%E1%F5%DE%FD%F3%F6%FB%FC%F5%B0%A8%B0%u0484%u043D%u04A8%u04D0%u04A7%u04A9%u04D1%u04A6%u04A7%BC%B2%u0488%u043D%u04D0%u04A7%B2%u04D0%u0423%u04D2%u04D9%u0431%u04D9%u04A5%BC%BC%BC%B2%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%u04A3%u04A2%u04A9%u04A9%B2%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%C2%FE%F7%F3%E1%F7%B2%E1%E6%F3%E0%E6%B2%E2%FE%F3%EB%FB%FC%F5%B2%F4%FB%E0%E1%E6%BC%BC%BC%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%DB%FC%F1%FD%FF%E2%FE%F7%E6%F7%B2%F3%F1%E6%FB%E4%FB%E6%EB%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%E6%EB%A8%B2%C2%F3%E1%E1%F7%F6%BC%B2%C1%F1%FD%E0%F7%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%E6%EB%A8%B2%DC%FD%E6%B2%E2%F3%E1%E1%F7%F6%BC%B2%C1%F1%FD%E0%F7%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%u047A%u04A5%u04C4%u04AF%BF%u047B%u04A5%u04C4%B2%u04D0%u04A7%u04A8%u04D3%u04A7%u04D2%u04D1%B2%u04D3%u0423%u04D2%u04A2%u0409%u04D0%u04A2%u04D2%u04D9%B0%EF%EF</div><div class="quext-bns js-hidden">Your browser is not compatible with this tool.</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/4--power-bi--.html" title="Previous" class="nav-button nav-button-left"><span>Previous</span></a>
+<a href="../html/-11-.html" title="Next" class="nav-button nav-button-right"><span>Next</span></a>
+</div>
+<footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Made with eXeLearning <span>(New window)</span></span></a></p>
+</body>
+</html>
